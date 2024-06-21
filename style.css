@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    
+}
+#nav{
+    height: 10%;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.disks{
+    height: 18px;
+    width: 18px;
+    background-color: black;
+    border-radius: 50%;
+}
+#navpart1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+#navpart2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    color:  rgb(99, 92, 92);
+}
+#navpart2 h5{
+    /* display: none; */
+}
+#navpart2 h4{
+    font-size: 12px;
+    font-weight: 600;
+}
+#navpart2 h4 span{
+    color:  rgb(202, 196, 196);
+    margin-left: 10px;
+}
+#nav2{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    gap: 70px;
+    padding: 0 40px;
+    align-items: center;
+}
+#nav2 h3{
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color:  rgb(99, 92, 92);
+}
+#content{
+    height: 80%;
+    width: 100%;
+}
+#textcontent{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    /* background-color: red; */
+}
+#textcontent::-webkit-scrollbar{
+    background-color: transparent;
+    height: 3px;
+}
+#textcontent::-webkit-scrollbar-thumb{
+    background-color: orangered;
+}
+.elem{
+    flex-shrink: 0;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+    font-family: "Hind Vadodara", sans-serif;
+}
+.elem h1{
+    font-weight: 200;
+     font-size: 6vw;
+}
+#image{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+#image::-webkit-scrollbar{
+    display: none;
+}
+#image img{ 
+    flex-shrink: 0;
+    object-position: 50% 30%;
+    object-fit: cover;
+    width: 100%;
+    height:100%;
+    
+}
+.small{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    
+}
+
+@media( max-width: 600px){
+    #main{
+        height: 100%;
+        width: 100%;
+        
+    }
+    #nav{
+        height: 8%;
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    .disks{
+        height: 13px;
+        width: 13px;
+        background-color: black;
+        border-radius: 50%;
+    }
+    #navpart1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1px;
+    }
+    #navpart2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 22px;
+        color:  rgb(99, 92, 92);
+    }
+    #navpart2 h5{
+        display: initial;
+        font-size: 22px;
+        color: black;
+    }
+    #navpart2 h4{
+        font-size: 12px;
+        font-weight: 600;
+        display: none;
+    }
+    #navpart2 h4:nth-child(1){
+        display: initial;
+    }
+    #navpart2 h4 span{
+        color:  rgb(202, 196, 196);
+        margin-left: 10px;
+    }
+    #nav2{
+        height: 8%;
+        width: 100%;
+        display: flex;
+        gap: 7px;
+        padding: 0 10px;
+        align-items: center;
+    }
+    #nav2 h3{
+        font-size: 10px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color:  rgb(99, 92, 92);
+    }
+    #content{
+        height: 84%;
+        width:100%; 
+    }
+    #textcontent{
+        height: 30%;
+        width: 100%;
+        display: flex;
+        overflow-x: auto;
+        gap: 80px;
+    }
+    #textcontent::-webkit-scrollbar{
+        background-color: transparent;
+        height: 3px;
+    }
+    #textcontent::-webkit-scrollbar-thumb{
+        background-color: orangered;
+    }
+    .elem{
+        flex-shrink: 0;
+        height: 100%;
+        width:fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        font-family: "Hind Vadodara", sans-serif;
+    }
+    .elem h1{
+        font-weight: 200;
+         font-size: 15vw;
+    }
+    #image{
+        height: 70%;
+        width: 100%;
+        display: flex;
+        overflow-x: auto;
+    }
+    #image::-webkit-scrollbar{
+        display: none;
+    }
+    #image img{ 
+        flex-shrink: 0;
+        object-position: 50% 30%;
+        object-fit: cover;
+        width: 100%;
+        height:100%;
+        
+    }
+    .small{
+       
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        
+    }
+    
+    
+}
